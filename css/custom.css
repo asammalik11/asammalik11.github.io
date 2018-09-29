@@ -1,0 +1,147 @@
+.navbar-default .nameTitle {
+    color: white;
+}
+
+.navbar-default .nameTitle:hover {
+    color: gray;
+}
+
+.greyBack {
+    background-color: gray;
+}
+
+hr.soften {
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    border: 0;
+}
+
+img.customBorder {
+    outline: 8px solid #2d3e50;
+    border: 5px solid gray;
+}
+
+/* My Work Section Boxes */
+
+.categories_wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.categories_wrapper > .category {
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a.portfolio-link {
+    text-decoration: none;
+}
+
+/* Boxes' colors */
+.cat1 { background-color: #99FF33 }
+.cat2 { background-color: #CC66FF }
+.cat3 { background-color: #FF5050 }
+.cat4 { background-color: #00FFFF }
+.cat5 { background-color: #999966 }
+.cat6 { background-color: #FFFF66 }
+
+/* Used to hide something on the page */
+.hide { display: none; }
+
+/* Progress Bar */
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gpaTitle {
+    color: #5F9EA0;
+}
+
+.coursesTitle {
+    color: #2C3E50;
+}
+
+.canvasProgBar {
+    background-color: white;
+    height: 208px;
+    width: 208px;
+    margin-bottom: 15px;
+}
+
+.circle {
+    fill: none;
+    stroke: gray;
+    stroke-width: 3;
+}
+
+.circleIn {
+    fill: white;
+}
+
+/* Footer */
+
+.footerLeft {
+    text-align: left;
+}
+
+.footerRight {
+    text-align: right;
+}
+
+.footerContact > .column {
+    display: inline-block;
+}
+
+.footerContact > .column:first-child {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+/* Styles for different screen sizes */
+
+@media(max-width: 1199px) {
+    /* Change font size for categories listed under My Work */
+    .categories_wrapper > .category {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 991px) {
+    /* Center footer elements when screen is too small */
+    .footerLeft, .footerRight {
+        text-align: center;
+    }
+
+    /* Change font size for categories listed under My Work */
+    .categories_wrapper > .category {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    /* Change font size for categories listed under My Work */
+    .categories_wrapper > .category {
+        font-size: 30px;
+    }
+}
+
+/*.topBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}*/

@@ -1,0 +1,156 @@
+/* Coming Soon Styles */
+
+.coming-soon-parent {
+	display: table;
+}
+
+.coming-soon {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Styles for the wrapper */
+
+.slider-wrapper {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	width: 720px;
+	height: 400px;
+	overflow: hidden;
+	background-color: black;
+}
+
+/* Styles for the slides */
+
+.slider-wrapper > .slides {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 2880px; /* 720*4(pictures) */
+	height: 400px;
+}
+
+.one { background-color: blue; }
+.two { background-color: green; }
+.three { background-color: red; }
+
+.slider-wrapper > .slides .slide {
+	width: 720px; /* 720px */
+	height: 100%; /* 400px */
+	float: left;
+}
+
+.slider-wrapper > .slides .slide > img {
+	height: 100%;
+	width: 100%;
+}
+
+/* Styles for the arrows */
+
+.slider-wrapper > .arrows {
+	margin: 173px 0; /* (400-[height of arrow box])/2 */
+	position: absolute;
+	width: 720px;
+}
+
+.slider-wrapper > .arrows > .left, .slider-wrapper > .arrows > .right {
+	width: 50px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+	display: none;
+}
+
+.arrows > .left i, .arrows > .right i {
+	padding: 20px 0; /* height of arrow box: 20 + 20 + [height of arrow image] = 55px; */
+}
+
+.slider-wrapper > .arrows > .left:hover, .slider-wrapper > .arrows > .right:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+.slider-wrapper > .arrows > .left { float: left; }
+.slider-wrapper > .arrows > .right { float: right; }
+
+/* Styles for image counter */
+.slider-wrapper > .image-number {
+	position: absolute; 
+	width: 720px;
+	background-color: gray; 
+	color: white; 
+	font-weight: bold;
+}
+
+/* Styles for description section */
+
+.description-wrapper {
+	margin-bottom: 25px;
+}
+
+.description-wrapper > .descriptions {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.description-wrapper > .descriptions .description {
+	font-size: 20px;
+}
+
+.description-wrapper > .descriptions .description .link {
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+@media(max-width: 767px) {
+	.slider-wrapper, .slider-wrapper > .slides .slide, .slider-wrapper > .arrows, .slider-wrapper > .image-number {
+		width: 540px;
+	}
+
+	.slider-wrapper, .slider-wrapper > .slides {
+		height: 300px;
+	}
+
+	.slider-wrapper {
+		margin-top: 25px;
+	}
+
+	.slider-wrapper > .slides {
+		width: 2160px; /* 540*4(pictures) */
+	}
+
+	.slider-wrapper > .arrows {
+		margin: 122px 0; /* ([height of slider:300]-[height of arrow box:55])/2 */
+		position: absolute;
+	}
+}
+
+@media(max-width: 599px) {
+	.slider-wrapper, .slider-wrapper > .slides .slide, .slider-wrapper > .arrows, .slider-wrapper > .image-number {
+		width: 360px;
+	}
+
+	.slider-wrapper, .slider-wrapper > .slides {
+		height: 200px;
+	}
+
+	.slider-wrapper > .slides {
+		width: 1440px; /* 360*4(pictures) */
+	}
+
+	.slider-wrapper > .arrows {
+		margin: 73px 0; /* ([height of slider:200]-[height of arrow box:55])/2 */
+		position: absolute;
+	}
+
+	.portfolio-modal > .modal-content .col-lg-8, .portfolio-modal > .modal-content .modal-body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

@@ -1,0 +1,490 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover {
+	color: #008094;
+}
+
+.blueBack {
+	background-color: #00BCD4; 
+	height: 540px;
+}
+
+.picBack {
+	background-color: yellow;
+	height: 725px;
+}
+
+.greyBack {
+	background-color: #455A64;
+	height: 710px;
+}
+
+.offwhiteBack {
+	background-color: #F5F5F5;
+	height: 813px;
+}
+
+.whiteBack {
+	background-color: white;
+	height: 263px;
+}
+
+/*.topleftLogo {	
+	width: 60px;
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	background-color: red;
+}*/
+
+.landingText {
+	margin-top: 150px;
+	width: 100%; 
+	height: 400px;
+	/*display: table-cell;
+	vertical-align: middle;*/
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+	font-weight: 600;
+	line-height: 1;
+}
+
+.subpages {
+	color: #07434D;
+	font-weight: 400;
+	display: block;
+	width: auto;
+	margin-top: 175px;
+	margin-left: 100px;
+	text-align: left;
+}
+
+.white {
+	color: white;
+}
+
+.navbar-default {
+	border: none;
+}
+
+.navbar-right {
+	margin-right: -40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #07434D;
+	font-size: 14px;
+	font-weight: 600;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+}
+
+.floatBox {
+	background-color: white;
+	position: absolute;
+	z-index: 99;
+	border-radius: 3px;
+	box-shadow: 0 0 3px black;
+}
+
+.big {
+	height: 227px;
+	width: 80%;
+	margin-top: 425px;
+	margin-left: -40%;
+	left: 50%;
+}
+
+.small {
+	height: 400px;
+	width: 40%;
+	margin-top: 950px;
+	left: 7%;
+}
+
+.small > .wrapper, .big > .wrapper {
+	position:relative; 
+	height:100%;
+}
+
+.small > .wrapper > .link, .big > .wrapper > .link {
+	position:absolute; 
+	bottom:0px;
+	text-transform: uppercase;
+	color: #008094;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 25px 40px;
+	border-top: 1px solid #eee;
+	width: 100%;
+}
+
+.floatBox > h3, .floatBox > .wrapper > h3 {
+	padding: 30px 40px;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+	font-size: 24px;
+	font-weight: 400;
+	color: #686868;
+	line-height: 36px;
+}
+
+.big > .wrapper {
+	margin-top: -20px;
+}
+
+.floatBox h4 {
+	font-size: 20px;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+	font-weight: 400;
+	line-height: 25px;
+	color: #686868;
+	padding: 0 40px;
+}
+
+@media (max-width: 1150px) {
+	.small > .wrapper > h3 {
+		font-size: 16px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 890px) {
+	.floatBox > h3 {
+		padding: 10px 40px;
+	}
+}
+
+@media (max-width: 680px) {
+	.floatBox > h3 {
+		padding: 20px;
+	}
+}
+
+.floatBox > .row {
+	margin-left: 42px;
+	padding-top: 5px;
+}
+
+.floatBox > .row > div:first-child {
+	float:left; 
+	margin-right:30px;
+}
+
+@media (max-width: 560px) {
+	.floatBox > .row > div:first-child, .betterFloatBox > .row > div:first-child {
+		float:none; 
+		margin-top: -10px;
+		margin-bottom: 10px;
+	}
+	.floatBox > .row > div, .betterFloatBox > .row {
+		margin-left: 20%;
+	}
+}
+
+.floatBox > .row a, .link a, h4 a {
+	text-transform: uppercase;
+	color: #008094;
+	font-weight: 600;
+}
+
+.floatBox > .row a:focus {
+	text-decoration: none;
+}
+
+.icon, .iconL {
+	color: #008094;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+.iconL {
+	margin-left: 5px;
+}
+
+.greyBack > .wrapper > h3, .offwhiteBack > h3 {
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+	color: white;
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 300;
+	position: absolute;
+	margin-top: 150px;
+	margin-left: 5%;
+	z-index: 50;
+}
+
+.greyBack > .wrapper, .picBack > .wrapper {
+	position:relative; 
+	height:100%;
+}
+.greyBack > .wrapper > .image, .picBack > .wrapper > .image {
+	position: absolute;
+	bottom: 0;
+}
+
+
+.offwhiteBack > h3 {
+	color: #686868; 
+	margin-top:150px;
+	float: left;
+}
+
+.offwhitePic {
+	width: 34%;
+	height: 145px;
+	margin-left: 33%;
+	margin-top: 350px;
+	margin-bottom: 100px;
+	background-color: green;
+	position: absolute;
+}
+
+.footer {
+	float:right; 
+	margin-right:3%; 
+}
+
+.topText {
+	margin-top:20px;
+	color: #008094;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+	font-weight: 600;
+	float: right;
+}
+
+.topText > a:hover {
+	color: #008094;
+	text-decoration: none;
+}
+
+.footerMenu {
+	margin-top: 100px;
+}
+
+.footerMenu > div {
+	margin-left: 20px;
+	float: right;
+	font-weight: 500;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: "Muli",sans-serif;*/
+}
+
+.footerMenu > div i {
+	margin-top: -5px;
+}
+
+.footerMenu > div a {
+	color: #666666;
+}
+
+.footerMenu > div a:hover {
+	text-decoration: none;
+}
+
+.current {
+	border-bottom: 2px solid white;
+}
+
+.halfBack {
+	position:absolute; 
+	width:100%; 
+	height:50%;
+}
+
+.topHalf {
+	background-color: #326DE6;
+}
+
+.bottomHalf {
+	top: 50%;
+	background-color: #455A64;
+}
+
+.logo {
+	width: 280px;
+	top: 20px;
+	left: 20px;
+	background:url(img/logo.svg) no-repeat;
+	/* uncomment position relative and comment the two lines below for img/logo.svg */
+	position: relative;
+	/*position: absolute;*/
+	/*height: 100px;*/
+}
+
+@media (max-width: 980px) {
+	.navbar > .container .navbar-brand {
+		margin-left: -80px;
+	}
+}
+
+.sponsorsBack {
+	/*height: 500px;*/
+	/*background-color: #F8F8F8;*/
+}
+
+.sponsorHeading {
+    height: 40px;
+	background: -webkit-gradient(linear, 100% 0, 0 0, from(#fff), color-stop(0.5, #b0b0b0), to(#fff));
+	background: -webkit-linear-gradient(to right, #fff 0%, #b0b0b0 50%, #fff 100%);
+	background: -moz-linear-gradient(to right, #fff 0%, #b0b0b0 50%, #fff 100%);
+	background: -o-linear-gradient(to right, #fff 0%, #b0b0b0 50%, #fff 100%);
+	background: linear-gradient(to right, #fff 0%, #b0b0b0 50%, #fff 100%);
+	margin-top: 20px;
+}
+
+.sponsorPictures {
+	height: 140px;
+	display: inline-block;
+}
+
+.sponsorHeading, .sponsorPictures {
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.sponsorPictures img {
+	height: 120px;
+	margin-top: 10px;
+}
+
+.sponsorPictures > div {
+	width: 50%;
+	float: right;
+}
+
+.sponsorPictures > div:first-child {
+	float: left;
+}
+
+.sponsorPictures > div > img {
+	float: left;
+	margin-left: 20px;
+}
+
+.sponsorPictures > div:first-child > img {
+	float: right;
+	margin-right: 20px;
+}
+
+.sponsorHeading > p {
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.secondPara {
+	margin-top: 15px;
+}
+
+@media(max-width: 980px) {
+	.secondPara {
+		margin-top: 5px;
+	}
+}
+
+.navbar > .container {
+	width: 100%;
+}
+
+.navbar > .container > .navbar-collapse {
+	margin-right: 30px;
+}
+
+.navbar > .container .navbar-brand {
+	margin-left: 0;
+}
+
+
+/* Better Version of Float Box - Automatically increases height */
+
+/* FloatBox in general */
+.betterFloatBox {
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 0 0 3px black;
+	z-index: 99;
+	background-color: white;
+}
+
+/* Big FloatBoxes */
+.betterBig {
+	width: 80%;
+	left: 10%;
+}
+
+/* Small FloatBoxes - Left and Right Side */
+.betterSmall {
+	width: 40%;
+	margin-top: 1000px;
+}
+
+.leftSide {
+	left: 7%;
+}
+
+.rightSide {
+	left: 52%;
+}
+
+/* Text inside FloatBox */
+.betterFloatBox > .text {
+	padding: 20px 40px;
+}
+
+.betterFloatBox > .text h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+.betterFloatBox > .text h4 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.betterFloatBox > .text h3, .betterFloatBox > .text h4 {
+	color: #686868;
+	margin: 10px 0;
+}
+
+/* Link at the bottom of FloatBox */
+.betterLink {
+	border-top: 1px solid #eee;
+	padding: 20px 40px;
+}
+
+.betterLink a, .betterLink .linkText {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.betterLink a, .text a {
+	color: #008094;
+}
+
+.betterLink .linkText {
+	color: #686868;
+	margin: 0;
+}
+
+.betterLink .anotherLink {
+	margin-left: 40px;
+}

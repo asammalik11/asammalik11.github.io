@@ -1,0 +1,25 @@
+.customLogo {
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    padding: 15px 15px 5px 15px;
+}
+.customBackColor {
+    background-color: #404040;
+}
+
+.navbar-inverse .customNavLink > li > a.customNotSelected {
+    color: white;
+    border: 1px solid #404040;
+}
+
+.navbar-inverse .customNavLink > li > a.customNotSelected:hover {
+    color: red;
+    background-color: black;
+}
+
+.navbar-inverse .customNavLink > li > a.customSelected {
+    color: red;
+    background-color: black;
+    border: 1px solid red;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swipe Test</title>
+
+<style type="text/css">
+	#test {
+	    background-color: red;
+	    height:50px;
+	    width:100px;
+	    left:100px;
+	    top:100px;
+	    position:relative;
+	}
+</style>
+
+</head>
+<body>
+
+<div id="test"></div>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Swiper Plugin -->
+<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {      
+	    // $("#test").swipe( {
+	    //     //Generic swipe handler for all directions
+	    //     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+	    //         $(this).text("You swiped " + direction );
+
+	    //         if (direction === 'right') $(this).css('left','+='+distance);
+	    //         else if (direction === 'left') $(this).css('left','-='+distance);
+	            
+	    //         console.log('you swiped');
+	    //     },
+	    //     threshold:0
+	    // });
+
+
+		var swipeOptions = {
+			triggerOnTouchEnd: true,
+			swipeStatus: swipeStatus,
+			allowPageScroll: "vertical",
+			threshold: 75
+		};
+
+		$('#test').swipe(swipeOptions);
+
+
+	    /**
+         * Catch each phase of the swipe.
+         * move : we drag the div
+         * cancel : we animate back to where we were
+         * end : we animate to the next image
+         */
+        function swipeStatus(event, phase, direction, distance) {
+            //If we are moving before swipe, and we are going L or R in X mode, or U or D in Y mode then drag.
+            if (phase == "move" && (direction == "left" || direction == "right")) {
+                var duration = 0;
+
+                if (direction == "left") {
+                    // scrollImages((IMG_WIDTH * currentImg) + distance, duration);
+                    $('#test').css('left','-='+distance);
+                } else if (direction == "right") {
+                    // scrollImages((IMG_WIDTH * currentImg) - distance, duration);
+                    $('#test').css('left','+='+distance);
+                }
+
+                console.log('Distance: ' + distance);
+
+            } 
+            // else if (phase == "cancel") {
+            //     scrollImages(IMG_WIDTH * currentImg, speed);
+            // } else if (phase == "end") {
+            //     if (direction == "right") {
+            //         previousImage();
+            //     } else if (direction == "left") {
+            //         nextImage();
+            //     }
+            // }
+        }
+	});
+</script>
+
+</body>
+</html>

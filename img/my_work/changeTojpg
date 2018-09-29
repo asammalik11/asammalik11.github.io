@@ -1,0 +1,6 @@
+files=`ls | grep JPG`
+
+for f in $files
+do
+ mv $f ${f%???}jpg
+done
