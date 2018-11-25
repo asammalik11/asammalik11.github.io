@@ -72,11 +72,17 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <li onclick="removeFocus('aboutMe')" class="page-scroll">
+                        <a id="aboutMe" href="#about">About Me</a>
+                    </li>
                     <li onclick="removeFocus('myWork')" class="page-scroll">
                         <a id="myWork" href="#portfolio">My Work</a>
                     </li>
-                    <li onclick="removeFocus('aboutMe')" class="page-scroll">
-                        <a id="aboutMe" href="#about">About Me</a>
+                    <li onclick="removeFocus('myEducation')" class="page-scroll">
+                        <a id="myEducation" href="#education">Education</a>
+                    </li>
+                    <li onclick="removeFocus('contactMe')" class="page-scroll">
+                        <a id="contactMe" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -96,6 +102,19 @@
                         <hr class="soften">
                         <span class="skills"> 3rd year Software Engineering student at York University. Welcome to my portfolio!</span>
                     </div>
+
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <br></br>
+                        <div class="col-lg-6">
+                            <a target="_blank" href="files/About-Me.pdf" class="btn btn-lg btn-outline">
+                             <i class="fa fa-book"></i> About Me</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a target="_blank" href="files/Resume.pdf" class="btn btn-lg btn-outline">
+                             <i class="fa fa-book"></i> Resume</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -111,7 +130,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -119,11 +138,11 @@
                             </div>
                         </div>
                         <div class="categories_wrapper cat6">
-                            <div class="category">Web Development</div>
+                            <div class="category"><h4>SMART Goals</h4></div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -131,11 +150,11 @@
                             </div>
                         </div>
                         <div class="categories_wrapper cat6">
-                            <div class="category">Mobile</div>
+                            <div class="category"><h4>Reflection Journal</h4></div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -143,11 +162,11 @@
                             </div>
                         </div>
                         <div class="categories_wrapper cat6">
-                            <div class="category">Java</div>
+                            <div class="category"><h4>My Vision</h4></div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -155,31 +174,57 @@
                             </div>
                         </div>
                         <div class="categories_wrapper cat6">
-                            <div class="category">York U</div>
+                            <div class="category"><h4>Why Me Video</h4></div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+            </div>
+            <div class="row">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <div class="categories_wrapper cat6">
-                            <div class="category">Design</div>
+                        <div class="categories_wrapper cat5">
+                            <div class="category"><h4>Web Development</h4></div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <div class="categories_wrapper cat6">
-                            <div class="category">Other</div>
+                        <div class="categories_wrapper cat5">
+                            <div class="category"><h4>Mobile</h4></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="categories_wrapper cat5">
+                            <div class="category"><h4>Java</h4></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="categories_wrapper cat5">
+                            <div class="category"><h4>Design</h4></div>
                         </div>
                     </a>
                 </div>
@@ -187,22 +232,432 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="greyBack" id="about">
+    <!-- Education Section -->
+    <section id="education">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="soften">
+                    <h2>Education</h2>
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                <p><span style="color: white">I am currently enrolled in the Software Engineering program at York University. I have a passion for programming and other creative skills such as animating, drawing and even cooking. My biggest strength is my ability to work with others. I really enjoy working in a team environment and meeting new people.</p>
+                <div class="col-lg-6 text-center">
+                    <div class="title gpaTitle">GPA</div>
+
+                    <svg class="canvasProgBar">
+                        <circle cx="104" cy="104" r="101" class="circle" />
+                        <path id="progGPA" />
+                        <circle cx="104" cy="104" r="40" class="circle circleIn" />
+                        <text x="104" y="112" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial" fill="#2C3E50">3.3</text>
+                    </svg>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="title coursesTitle">Relevant Courses</div>
+
+                    <ul style="padding-left:5px">
+                        <div class="col-lg-12 col-md-12 col-sm-6">
+                                <li>Computational Thinking</li>
+                                <li>Discrete Mathematics for Engineers</li>
+                                <li>Advanced Object Oriented Programming</li>
+                                <li>Fundamentals of Data Structures</li>
+                                <li>Software Tools</li>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-6">
+                                <li>Computer Organization</li>
+                                <li>Software Development Project</li>
+                                <li>Effective Engineering Communication</li>
+                                <li>Eng Projs:Management, Economics & Safety</li>
+                        </div>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- Footer -->
+    <footer id="contact" class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4 footerLeft">
+                        <h3>Location</h3>
+                        <p>Located in Mississauga, Ontario, Canada<br>But looking for positions from around the world.</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Relevant Links</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedin.com/in/asammalik11" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/asammalik11" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-lg fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4 footerRight">
+                        <h3>Contact Info.</h3>                        
+                        <div class="footerContact">
+                            <div class="column">
+                                <div><i class="fa fa-envelope-o"></i></div>
+                            </div>
+                            <div class="column">
+                                <div>asammalik11@gmail.com</div>
+                            </div>
+                        </div>                                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Asam Malik 2018
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="circle"></div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <!-- Add this to class to make it only visible on small screens visible-xs visble-sm -->
+    <div id="mainTopBtn" class="scroll-top page-scroll" style="display:none">
+        <a class="btn btn-warning" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- SMART Goals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>SMART Goals</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        Here are the top three undergraduate competencies I would like to develop in the early years of my studies at York, along with two S.M.A.R.T. goals for each competency.
+                                        <div class="link">
+                                            <a target="_blank" href="files/Resume.pdf">
+                                            <i class="fa fa-book"></i> Resume</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reflection Journal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Reflection Journal</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Vision -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>My Vision As An Engineer</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Me Video -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Why Me Video</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        Here is a short video on who I am and what drives me each and every day.
+                                        <div class="link">
+                                            <a href="https://youtu.be/bXQtT8aUKs4" target="_blank">Why Me?</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal close-button" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Web Development</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider1" class="slider-wrapper">
+                                <div class="arrows">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/innovation_york.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        I designed and developed this website homepage for the Innovation York unit at York University. The home page consists of two banners, a brief description of Innovation York and an animated representation of the services offered along with icons for each service. The website can be viewed at the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="http://www.innovationyork.ca/" target="_blank">Innovation York</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default close-button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Mobile -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mobile</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider2" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/zigzag.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        I made this simple game during the summer of 2017 to familiarize myself with Unity 3D. The main goal was just to get some practice but I decided to upload it to the Play Store as well.<br>
+                                        It's compatible with most Android devices, so check it out at the link below and see if you can beat my highscore of 201.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://play.google.com/store/apps/details?id=com.Kilam.ZigZag&hl=en" target="_blank">ZigZag - Google Play Store</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Java -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Java</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider3" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/connect_four.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        This Connect Four game was made by my group as a final project for our high school Computer Science course. The application contains both PvP and PvPc functionalities. To try out the game, go to the link below.<
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://github.com/asammalik11/ConnectFour" target="_blank">Connect Four Game - Github</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Graphic Design</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider5" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/kmb.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        Over the past year, I have developed several knowledge products for Research Impact/KMb that can be used to support researchers to better inform public policy or professional practice. These products include infographics, brochures, web-pages, etc. You can find my Research Impact/KMb design directory below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://www.dropbox.com/sh/ovlwdhdkygsy0kg/AAAMQvMsRqe0RQEOEgEV3Wiwa?dl=0" target="_blank">Design Directory</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Button to go to the top of the page -->
     <!-- <button id="topBtn" type="button" class="topBtn btn btn-danger">
         <img src="img/top-arrow.png" style="width:35px; height:30px; margin-left:-3px; margin-top:-1px">
