@@ -47,7 +47,7 @@ a.portfolio-link {
 .cat2 { background-color: #CC66FF }
 .cat3 { background-color: #FF5050 }
 .cat4 { background-color: #00FFFF }
-.cat5 { background-color: #999966 }
+.cat5 { background-color: #FF6347 }
 .cat6 { background-color: #FFFF66 }
 
 /* Used to hide something on the page */
@@ -78,15 +78,24 @@ a.portfolio-link {
 
 .circle {
     fill: none;
-    stroke: gray;
-    stroke-width: 3;
+    stroke: #5F9EA0;
+    stroke-width: 20;
 }
+
+.circleBorder {
+    fill: none;
+    stroke: #5F9EA0;
+}
+
 
 .circleIn {
     fill: white;
+    stroke-width: 1;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 1000;
 }
 
-/* Footer */
+/* Footer 
 
 .footerLeft {
     text-align: left;
@@ -132,6 +141,14 @@ a.portfolio-link {
     .categories_wrapper > .category {
         font-size: 30px;
     }
+}
+
+#portfolio {
+    padding: 70px 0px 0px;
+}
+
+#education {
+    padding: 50px 0px 50px;
 }
 
 /*.topBtn {

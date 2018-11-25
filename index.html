@@ -32,8 +32,6 @@
     <!-- Categories' Font -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:900' rel='stylesheet' type='text/css'>
 
-    <!-- Progress Bar Plugin CSS -->
-    <link href="css/circle.css" rel="stylesheet">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/progress-circle.js"></script>
@@ -246,7 +244,9 @@
                     <div class="title gpaTitle">GPA</div>
 
                     <svg class="canvasProgBar">
-                        <circle cx="104" cy="104" r="101" class="circle" />
+                        <circle cx='104' cy='104' r='80' class="circleBorder"/>
+                        <circle cx='104' cy='104' r='100' class="circleBorder"/>
+                        <circle cx='104' cy='104' r='90' stroke-dasharray='500' stroke-dashoffset='0' class="circle"/>
                         <path id="progGPA" />
                         <circle cx="104" cy="104" r="40" class="circle circleIn" />
                         <text x="104" y="112" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial" fill="#2C3E50">3.3</text>
@@ -356,8 +356,8 @@
                                     <li class="description">
                                         Here are the top three undergraduate competencies I would like to develop in the early years of my studies at York, along with two S.M.A.R.T. goals for each competency.
                                         <div class="link">
-                                            <a target="_blank" href="files/Resume.pdf">
-                                            <i class="fa fa-book"></i> Resume</a>
+                                            <a target="_blank" href="files/SMART-Goals.pdf">
+                                            <i class="fa fa-book"></i> SMART Goals</a>
                                         </div>
                                     </li>
                                 </ul>
